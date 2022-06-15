@@ -121,10 +121,14 @@ print(min)
 
 46 - Faça um programa que leia um número inteiro positivo de 3 dígitos e o inverta
 
+num = 123
+numeroInvertido = int(str(num)[::-1]);
+
+print(numeroInvertido)
+
 """
 
-maiuscula = 'A'
-ord = ord(maiuscula)
-min = chr(ord+32)
+num = 123
+numeroInvertido = int(str(num)[::-1]);
 
-print(min)
+print(numeroInvertido)
