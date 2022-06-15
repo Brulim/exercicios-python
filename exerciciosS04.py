@@ -126,9 +126,61 @@ numeroInvertido = int(str(num)[::-1]);
 
 print(numeroInvertido)
 
+47 - Leia um número de 4 dígitos e imprima 1 dígito por linha
+
+num = 1234
+n=str(num)
+
+print(n[0])
+print(n[1])
+print(n[2])
+print(n[3])
+
+48 - Leia um valor inteiro em Segundos, imprima-o em horas, minutos e segundos.
+
+print('Digite quantos segundos deseja converter')
+sec = int(input())
+h=int(sec/3600)
+sec2 = sec-(h*3600)
+m=int(sec2/60)
+s = (sec2)-(m*60)
+print(f'{sec} segundos equivale a {h}h:{m}m:{s}s')
+
+49 - Faça um programa que leia um horário (hora, minuto e segundo) de início e a duração em segundos;
+O programa deve resultar com o novo horário (término).
+
+print('Digite hora de inicio')
+hi = int(input())
+print('Digite minuto')
+mi = int(input())
+print('Digite segundo')
+si = int(input())
+print('Digite duração em segundos')
+t = int(input())
+
+tt = int(hi*3600 + mi*60 + si + t)
+
+h=int(tt/3600)
+sec2 = tt-(h*3600)
+m=int(sec2/60)
+s = (sec2)-(m*60)
+print(f'Horário do término é {h}h:{m}m:{s}s')
+
 """
+print('Digite hora de inicio')
+hi = int(input())
+print('Digite minuto')
+mi = int(input())
+print('Digite segundo')
+si = int(input())
+print('Digite duração em segundos')
+t = int(input())
 
-num = 123
-numeroInvertido = int(str(num)[::-1]);
+tt = int(hi*3600 + mi*60 + si + t)
 
-print(numeroInvertido)
+h=int(tt/3600)
+sec2 = tt-(h*3600)
+m=int(sec2/60)
+s = (sec2)-(m*60)
+print(f'Horário do término é {h}h:{m}m:{s}s')
+
