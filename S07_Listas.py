@@ -107,6 +107,17 @@ while indice < len(cores):
 for indice, cor in enumerate(cores):
     print(indice, cor)
 
+print(sum(lista)) # Soma da lista
+print(max(lista)) # Valor máximo
+print(min(lista)) # Valor mínimo
+
+#Deep copy - cópia independente
+listanova = lista.copy()
+
+#Shallow Copy - o que for alterado em uma também será alterado na outra
+listanova = lista
+
+
 """
 cores = ['verde', 'amarelo', 'azul', 'branco']
 
