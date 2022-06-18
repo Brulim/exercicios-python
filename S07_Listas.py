@@ -1,7 +1,7 @@
 """
 ### COLEÇÕES PYTHON
 
-# LISTAS
+# LISTAS - List
 
 Listas em Python funcionam como vetores/matrizes (arrays), com a diferença de serem
 DINÂMICO e também de podermos colocar QUALQUER tipo de dado.
