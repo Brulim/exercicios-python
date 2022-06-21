@@ -44,12 +44,36 @@ x = a[0]
 y = a[2]
 print(x + y)
 
-5 - Leia um vetor de 10 posições. Cotnar e escrever quantos valores pares ele possui.
+5 - Leia um vetor de 10 posições. Contar e escrever quantos valores pares ele possui.
+
+v = [1, 0, 5, 2, 4, 7, 2, 15, 30, 45]
+pares = []
+indice = 0
+
+while indice < len(v):
+    resto = v[indice] % 2
+    if resto == 0:
+        par = v[indice]
+        pares.append(par)
+    indice = indice + 1
+print(pares)
+elementos = len(pares)
+print(f'Há {elementos} elementos pares na lista.')
+
+
 
 """
 
-a = [1, 0, 5, 1.5, -5, 7, 2, 4]
-x = a[0]
-y = a[2]
-print(x + y)
+v = [1, 0, 5, 2, 4, 7, 2, 15, 30, 45]
+pares = []
+indice = 0
 
+while indice < len(v):
+    resto = v[indice] % 2
+    if resto == 0:
+        par = v[indice]
+        pares.append(par)
+    indice = indice + 1
+print(pares)
+elementos = len(pares)
+print(f'Há {elementos} elementos pares na lista.')
