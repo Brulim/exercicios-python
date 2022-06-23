@@ -113,17 +113,12 @@ print(nome_completo(sobrenome='Marques', nome='Marcia'))
 # Erro comum na utilização do return
 
 
-def soma_impares(numeros):
-    total = 0
-    for num in numeros:
-        if num % 2 != 0:
-            total = total + num
-    return total
+def cantar_parabens(aniversariante):
+    print('Parabéns pra você')
+    print('Nesta data querida')
+    print('Muitas felicidades')
+    print('Muitos anos de vida')
+    print(f'Viva o/a {aniversariante}!')
 
 
-if __name__ == '__main__':
-    lista = [1, 2, 3, 4, 5, 6, 7]
-    print(soma_impares(lista))
-
-    tupla = (1, 2, 3, 4, 5, 6, 7)
-    print(soma_impares(tupla))
+print(cantar_parabens('Patricia'))
