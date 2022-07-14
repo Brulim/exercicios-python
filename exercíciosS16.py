@@ -34,3 +34,28 @@ trocar para um canal indicado;
 - Também devem existir métodos para consultar o valor do volume de som e o canal selecionado.
 
 """
+
+# 1
+
+class Pessoa:
+
+    contador = 0
+
+    def __init__(self, nome, idade, altura):
+        self.__id = Pessoa.contador + 1
+        self.__nome = nome
+        self.__idade = idade
+        self.__altura = altura
+        Pessoa.contador = self.__id
+
+    def dados_pessoa(self):
+        print(f'Nome: {self._Pessoa__nome}')
+        print(f'Idade: {self._Pessoa__idade}')
+        print(f'Altura: {self._Pessoa__altura}')
+
+pessoa1 = Pessoa('Bruno', 40, 1.75)
+
+pessoa1.dados_pessoa()
+
+#2
+
