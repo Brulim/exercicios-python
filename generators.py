@@ -95,5 +95,3 @@ print(f'List Comprehension: {list_comp} bytes')
 print(f'Set Comprehension: {set_comp} bytes')
 print(f'Dictionary Comprehension: {dic_comp} bytes')
 print(f'Generator Expression: {gen} bytes')
-
-
