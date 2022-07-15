@@ -36,7 +36,7 @@ trocar para um canal indicado;
 """
 
 # 1
-
+"""
 class Pessoa:
 
     contador = 0
@@ -53,9 +53,45 @@ class Pessoa:
         print(f'Idade: {self._Pessoa__idade}')
         print(f'Altura: {self._Pessoa__altura}')
 
-pessoa1 = Pessoa('Bruno', 40, 1.75)
+#pessoa1 = Pessoa('Bruno', 40, 1.75)
+#pessoa2 = Pessoa('Dani', 41, 1.68)
 
-pessoa1.dados_pessoa()
+#pessoa1.dados_pessoa()
+#pessoa2.dados_pessoa()
+#print(pessoa1.contador)
 
+"""
 #2
+
+
+class Agenda:
+
+    #Quando atingir 3 deve parar de gravar
+    memoria = 0
+
+    def __init__(self, nome, idade, altura):
+        self.__id = Agenda.memoria + 1
+        if self.__id < 4:
+            self.__nome = nome
+            self.__idade = idade
+            self.__altura = altura
+            Agenda.memoria = self.__id
+        else:
+            print('A memória está cheia')
+
+    def imprime_agenda(self):
+        print(f'ID: {self._Agenda__id}')
+        print(f'Nome: {self._Agenda__nome}')
+        print(f'Idade: {self._Agenda__idade}')
+        print(f'Altura: {self._Agenda__altura}')
+
+contato1 = Agenda('Bruno', 40, 1.75)
+contato2 = Agenda('Dani', 41, 1.68)
+contato3 = Agenda('Marcia', 30, 1.65)
+contato4 = Agenda('Brigitte', 30, 1.65)
+
+contato1.imprime_agenda()
+print(Agenda.memoria)
+
+
 
